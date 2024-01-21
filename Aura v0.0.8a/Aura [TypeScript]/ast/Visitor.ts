@@ -1,0 +1,43 @@
+import { ArrayAccessExpression } from "../ast/ArrayAccessExpression";
+import { ArrayAssignmentStatement } from "../ast/ArrayAssignmentStatement";
+import { ArrayExpression } from "../ast/ArrayExpression";
+import { AssignmentStatement } from "../ast/AssignmentStatement";
+import { BinaryExpression } from "../ast/BinaryExpression";
+import { BlockStatement } from "../ast/BlockStatement";
+import { BreakStatement } from "../ast/BreakStatement";
+import { ConditionalExpression } from "../ast/ConditionalExpression";
+import { ContinueStatement } from "../ast/ContinueStatement";
+import { DoWhileStatement } from "../ast/DoWhileStatement";
+import { ForStatement } from "../ast/ForStatement";
+import { FunctionDefineStatement } from "../ast/FunctionDefineStatement";
+import { FunctionStatement } from "../ast/FunctionStatement";
+import { FunctionalExpression } from "../ast/FunctionalExpression";
+import { IfElseStatement } from "../ast/IfElseStatement";
+import { ReturnStatement } from "../ast/ReturnStatement";
+import { UnaryExpression } from "../ast/UnaryExpression";
+import { ValueExpression } from "../ast/ValueExpression";
+import { VariableExpression } from "../ast/VariableExpression";
+import { WhileStatement } from "../ast/WhileStatement";
+
+export interface Visitor {
+    visit(s: ArrayAccessExpression): void;
+    visit(s: ArrayAssignmentStatement): void;
+    visit(s: ArrayExpression): void;
+    visit(s: AssignmentStatement): void;
+    visit(s: BinaryExpression): void;
+    visit(s: BlockStatement): void;
+    visit(s: BreakStatement): void;
+    visit(s: ConditionalExpression): void;
+    visit(s: ContinueStatement): void;
+    visit(s: DoWhileStatement): void;
+    visit(s: ForStatement): void;
+    visit(s: FunctionDefineStatement): void;
+    visit(s: FunctionStatement): void;
+    visit(s: FunctionalExpression): void;
+    visit(s: IfElseStatement): void;
+    visit(s: ReturnStatement): void;
+    visit(s: UnaryExpression): void;
+    visit(s: ValueExpression): void;
+    visit(s: VariableExpression): void;
+    visit(s: WhileStatement): void;
+}
