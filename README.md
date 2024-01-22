@@ -271,7 +271,7 @@ output("Вас зовут: ", name)  # Выводит: Вас зовут: Fixuty
 output("Hello, \n");
 output("world!");
 // Вывод: Hello,
-world!
+// world!
 ```
 
 ### **Операторы сравнения**
